@@ -1,12 +1,12 @@
 <?php
 
 include_once 'Prodotto.php';
+include_once 'Smart_Device.php';
+
 
 class Smartphone extends Prodotto
 {
-    public $OS;
-    public $dimensione_display;
-    public $ram;
+    use SmartDevice;
     public $dual_sim;
     public $tipo_connessione;
     public $versione_bt;

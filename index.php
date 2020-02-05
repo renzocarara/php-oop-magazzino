@@ -3,7 +3,7 @@ include_once 'Prodotto.php';
 include_once 'Smartphone.php';
 //include_once 'Ricondizionato.php';
 
-// creo un'istanza di uno smatphone
+// creo un'istanza della classe smartphone
 // il costruttore riceve 8 parametri (!) , 5 derivano dalla classe padre Prodotto, 3 dalla classe extended Smartphone
 $cell_s10 = new Smartphone('AA300', 's10', 'smartphone', 'samsung', 40, 'android', 6.1, 512);
 
