@@ -18,9 +18,9 @@ class Prodotto
     {
         $this -> id_prodotto = $id_prodotto;
         $this -> nome_prodotto = $nome_prodotto;
-        $this -> quantita = $quantita;
         $this -> categoria = $categoria;
         $this -> marca = $marca;
+        $this -> quantita = $quantita;
     }
 
     public function stampaScorteProdotto()
