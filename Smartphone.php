@@ -11,17 +11,17 @@ class Smartphone extends Prodotto
     public $tipo_connessione;
     public $versione_bt;
 
-    public function __construct($id_prodotto, $nome_prodotto, $categoria, $marca = null, $quantita = 0, $OS, $dimensione_display, $ram = 0)
+    public function __construct($_id_prodotto, $_nome_prodotto, $_categoria, $_marca = null, $_quantita = 0, $_OS, $_dimensione_display, $_ram = 0)
     {
         // richiamo il costruttore della classe padre con i suoi parametri
-        parent::__construct($id_prodotto, $nome_prodotto, $categoria, $marca, $quantita);
-        // inizializzo gli attributi incluso nella trait SmartDevice
-        $this -> OS =  $OS;
-        $this -> dimensione_display = $dimensione_display;
-        $this -> ram = $ram;
+        parent::__construct($_id_prodotto, $_nome_prodotto, $_categoria, $_marca, $_quantita);
+        // inizializzo gli attributi inclusi nella trait SmartDevice
+        $this -> OS =  $_OS;
+        $this -> dimensione_display = $_dimensione_display;
+        $this -> ram = $_ram;
     }
 
-    // public function boh($???)
+    // public function ($???)
     // {
     //     return $??????;
     // }

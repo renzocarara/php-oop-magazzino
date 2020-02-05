@@ -13,13 +13,13 @@ class Smartwatch extends Prodotto
     public $barometro;
     public $quadrante;
 
-    public function __construct($id_prodotto, $nome_prodotto, $categoria, $marca = null, $quantita = 0, $OS, $cardio)
+    public function __construct($_id_prodotto, $_nome_prodotto, $_categoria, $_marca = null, $_quantita = 0, $_OS, $_cardio)
     {
         // richiamo il costruttore della classe padre con i suoi parametri
-        parent::__construct($id_prodotto, $nome_prodotto, $categoria, $marca, $quantita);
+        parent::__construct($_id_prodotto, $_nome_prodotto, $_categoria, $_marca, $_quantita);
         // inizializzo un attributo incluso nella trait SmartDevice
-        $this -> OS =  $OS;
+        $this -> OS =  $_OS;
         // inizializzo un attributo specifico di questa classe Smartwatch
-        $this -> cardio = $cardio;
+        $this -> cardio = $_cardio;
     }
 }

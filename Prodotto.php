@@ -14,13 +14,13 @@ class Prodotto
     public $costo;
     public $sconto;
 
-    public function __construct($id_prodotto, $nome_prodotto, $categoria, $marca = null, $quantita = 0)
+    public function __construct($_id_prodotto, $_nome_prodotto, $_categoria, $_marca = null, $_quantita = 0)
     {
-        $this -> id_prodotto = $id_prodotto;
-        $this -> nome_prodotto = $nome_prodotto;
-        $this -> categoria = $categoria;
-        $this -> marca = $marca;
-        $this -> quantita = $quantita;
+        $this -> id_prodotto = $_id_prodotto;
+        $this -> nome_prodotto = $_nome_prodotto;
+        $this -> categoria = $_categoria;
+        $this -> marca = $_marca;
+        $this -> quantita = $_quantita;
     }
 
     public function stampaScorteProdotto()
