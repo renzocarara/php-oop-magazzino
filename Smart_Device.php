@@ -1,6 +1,6 @@
 <?php
 
-// definisco delle caratteristiche comuni ad ogni device
+// definisco delle caratteristiche comuni ad ogni smart device
 trait SmartDevice
 {
     public $OS;

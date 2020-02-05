@@ -43,11 +43,11 @@ class Prodotto
         echo 'Data ultimo ordine: ' . $this->data_ultimo_ordine . '<br>';
 
         if ($this->quantita>=1 && $this->quantita<=5) {
-            echo "DISPONIBILE, ma in esaurimento" . '<br>';
+            echo "DISPONIBILE, ma in esaurimento" . '<br><br>';
         } elseif ($this->quantita>=6) {
-            echo "DISPONIBILE" . '<br>';
+            echo "DISPONIBILE" . '<br><br>';
         } else {
-            echo "ESAURITO!!" . '<br>';
+            echo "ESAURITO!!" . '<br><br>';
         }
     }
 }

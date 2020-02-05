@@ -15,6 +15,7 @@ class Smartphone extends Prodotto
     {
         // richiamo il costruttore della classe padre con i suoi parametri
         parent::__construct($id_prodotto, $nome_prodotto, $categoria, $marca, $quantita);
+        // inizializzo gli attributi incluso nella trait SmartDevice
         $this -> OS =  $OS;
         $this -> dimensione_display = $dimensione_display;
         $this -> ram = $ram;
